@@ -27,6 +27,7 @@ stages:
     displayName: Build
     pool:
       vmImage: $(vmImageName)
+      name: acr-test
       demands:
       - Agent.Name -equals devopsagent
     steps:
